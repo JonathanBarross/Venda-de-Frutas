@@ -1,0 +1,67 @@
+@page
+@model VendaDeFrutas.Pages_Frutas.EditModel
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Editar Fruta</title>
+</head>
+<body>
+
+<h4>Fruta</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <!-- Formulário para editar uma fruta -->
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Fruta.Id" /> <!-- Campo oculto para o ID da fruta -->
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Fruta.Nome" class="control-label"></label>
+                <input asp-for="Fruta.Nome" class="form-control" />
+                <span asp-validation-for="Fruta.Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Fruta.Classificacao" class="control-label"></label>
+                <input asp-for="Fruta.Classificacao" class="form-control" />
+                <span asp-validation-for="Fruta.Classificacao" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Fruta.Fresca" /> @Html.DisplayNameFor(model => model.Fruta.Fresca)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fruta.Quantidade" class="control-label"></label>
+                <input asp-for="Fruta.Quantidade" class="form-control" />
+                <span asp-validation-for="Fruta.Quantidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fruta.Valor" class="control-label"></label>
+                <input asp-for="Fruta.Valor" class="form-control" />
+                <span asp-validation-for="Fruta.Valor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Voltar para a lista</a>
+</div>
+
+<!-- Scripts para validação no front-end -->
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+</body>
+</html>

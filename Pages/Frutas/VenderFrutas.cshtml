@@ -1,0 +1,62 @@
+@page
+@model VendadeFrutas.Pages.VenderFrutaModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Vender Frutas";
+}
+
+<h2>Vender Frutas</h2>
+
+<!-- Filtros de pesquisa -->
+<form method="get">
+    <div class="form-group">
+        <input type="text" name="ProcurarString" value="@Model.ProcurarString" placeholder="Buscar fruta..." class="form-control w-25 d-inline" />
+        
+        <select name="Classificacao" class="form-control w-25 d-inline">
+            <option value="">Todas</option>
+            <option value="Extra">Extra</option>
+            <option value="de primeira">Primeira</option>
+            <option value="de segunda">Segunda</option>
+            <option value="de terceira">Terceira</option>
+        </select>
+
+        <select name="Fresca" class="form-control w-25 d-inline">
+            <option value="">Todas</option>
+            <option value="true">Fresca</option>
+            <option value="false">Não Fresca</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary">Filtrar</button>
+    </div>
+</form>
+
+<!-- Formulário de venda -->
+<form method="post">
+    <div class="form-group">
+        <label>Selecione as Frutas:</label>
+        @foreach (var fruta in Model.FrutasDisponiveis)
+        {
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="FrutasSelecionadas" value="@fruta.Id" id="fruta-@fruta.Id">
+                <label class="form-check-label" for="fruta-@fruta.Id">
+                    @fruta.Nome - R$ @fruta.Valor.ToString("N2")
+                </label>
+            </div>
+        }
+    </div>
+
+    <div class="form-group">
+        <label for="Desconto">Desconto:</label>
+        <select class="form-control" asp-for="Desconto">
+            <option value="0">0%</option>
+            <option value="5">5%</option>
+            <option value="10">10%</option>
+            <option value="15">15%</option>
+            <option value="20">20%</option>
+            <option value="25">25%</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Finalizar Venda</button>
+    <a asp-page="./Index">Voltar para a lista</a>
+</form>

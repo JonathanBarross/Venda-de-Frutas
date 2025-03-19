@@ -1,0 +1,86 @@
+@page
+@model VendaDeFrutas.Pages_Frutas.IndexModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Menu Frutas";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+<form method="get">
+    <input type="text" name="ProcurarString" value="@Model.ProcurarString" placeholder="Buscar fruta..." class="form-control w-25 d-inline" />
+
+    <select name="Classificacao" class="form-control w-25 d-inline">
+        <option value="">Todas</option>
+        <option value="Extra">Extra</option>
+        <option value="de primeira">Primeira</option>
+        <option value="de segunda">Segunda</option>
+        <option value="de terceira">Terceira</option>
+    </select>
+
+    <select name="Fresca" class="form-control w-25 d-inline">
+        <option value="">Todas</option>
+        <option value="true">Fresca</option>
+        <option value="false">Não Fresca</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary">Filtrar</button>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Fruta[0].Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fruta[0].Classificacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fruta[0].Fresca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fruta[0].Quantidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fruta[0].Valor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Fruta) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Classificacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fresca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = VendaDeFrutas
+build_property.RootNamespace = VendaDeFrutas
+build_property.ProjectDir = C:\Users\JONATHAN\Documents\Local de Desenvolvimento\Projetos\ProjetoCamed\VendaDeFrutas\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\JONATHAN\Documents\Local de Desenvolvimento\Projetos\ProjetoCamed\VendaDeFrutas
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/Frutas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJ1dGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/Frutas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJ1dGFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/Frutas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJ1dGFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/Frutas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJ1dGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/Frutas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJ1dGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/Frutas/RelatorioVendas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJ1dGFzXFJlbGF0b3Jpb1ZlbmRhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/Frutas/VenderFrutas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJ1dGFzXFZlbmRlckZydXRhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JONATHAN/Documents/Local de Desenvolvimento/Projetos/ProjetoCamed/VendaDeFrutas/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-et23757q69

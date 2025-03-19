@@ -1,0 +1,21 @@
+@page "/Login"
+@model VendadeFrutas.Pages.Login.LoginModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Login";
+}
+
+<h2>Login</h2>
+
+<!-- Formulário de login -->
+<form method="post">
+    <div class="form-group">
+        <label for="Nome">Usuário</label>
+        <input type="text" class="form-control" id="Nome" name="Nome" required>
+    </div>
+    <div class="form-group">
+        <label for="Senha">Senha</label>
+        <input type="password" class="form-control" id="Senha" name="Senha" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Entrar</button>
+</form>

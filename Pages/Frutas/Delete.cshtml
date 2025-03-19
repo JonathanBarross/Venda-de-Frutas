@@ -1,0 +1,61 @@
+@page
+@model VendaDeFrutas.Pages_Frutas.DeleteModel
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Deletar Fruta</title>
+</head>
+<body>
+
+<h3>Você realmente quer deletar essa fruta?</h3>
+<div>
+    <h4>Fruta</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Fruta.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Fruta.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Fruta.Classificacao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Fruta.Classificacao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Fruta.Fresca)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Fruta.Fresca)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Fruta.Quantidade)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Fruta.Quantidade)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Fruta.Valor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Fruta.Valor)
+        </dd>
+    </dl>
+    
+    <!-- Formulário para confirmar a exclusão -->
+    <form method="post">
+        <input type="hidden" asp-for="Fruta.Id" />
+        <input type="submit" value="Deletar" class="btn btn-danger" /> |
+        <a asp-page="./Index">Voltar para a lista</a>
+    </form>
+</div>
+</body>
+</html>

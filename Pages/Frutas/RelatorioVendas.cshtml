@@ -1,0 +1,33 @@
+@page "/RelatorioVendas"
+@model VendadeFrutas.Pages.RelatorioVendasModel
+@{
+    Layout = "_Layout"; // Define o layout principal
+    ViewData["Title"] = "Relatório de Vendas"; // Define o título da página
+}
+
+<h2>Relatório de Vendas</h2>
+
+<!-- Tabela de vendas -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Data e Hora</th>
+            <th>Itens Vendidos</th>
+            <th>Valor Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var venda in Model.Vendas)
+        {
+            <tr>
+                <td>@venda.DataHora.ToString("dd/MM/yyyy HH:mm")</td> <!-- Formata a data e hora -->
+                <td>@venda.ItensVendidos</td> <!-- Exibe os itens vendidos -->
+                <td>R$ @venda.ValorTotal.ToString("N2")</td> <!-- Formata o valor total -->
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-page="./Index">Voltar para a lista</a> <!-- Link para voltar à página inicial -->
+</div>
